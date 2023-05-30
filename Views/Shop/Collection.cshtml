@@ -1,0 +1,37 @@
+﻿
+@model List<Category>
+
+
+
+
+<section id="Collections">
+    <div class="container">
+        <div class="section-name">
+            <h1>Collections</h1>
+        </div>
+        <div class="row">
+          @foreach (var gaming in Model)
+            {
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="card-wrapperr">
+                        <a asp-controller="Shop" asp-action="shop" asp-route-id="@gaming.Id">
+                           
+                            
+                                <img src="~/assets/images/Collections/@gaming.CategoryPath" alt="">
+                            
+                        </a>
+                        <div class="card-content">
+                          
+                            
+                                <h5>@gaming.Name</h5>
+                            
+                        </div>
+                    </div>
+                </div>
+            }
+         
+    
+         </div>
+       
+    </div>
+</section>

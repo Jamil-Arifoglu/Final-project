@@ -1,0 +1,181 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Gaming
+build_property.RootNamespace = Gaming
+build_property.ProjectDir = C:\Users\Nermin\Desktop\Gaming\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Nermin\Desktop\Gaming
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Category/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDYXRlZ29yeVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Category/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDYXRlZ29yeVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Category/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDYXRlZ29yeVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Category/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDYXRlZ29yeVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Color/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDb2xvclxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Color/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDb2xvclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Color/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDb2xvclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Color/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDb2xvclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Color/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xDb2xvclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Gaming/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xHYW1pbmdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Gaming/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xHYW1pbmdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Gaming/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xHYW1pbmdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Gaming/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xHYW1pbmdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Gaming/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xHYW1pbmdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xzaGFyZWRcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xzaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Size/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xTaXplXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Size/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xTaXplXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Size/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xTaXplXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Size/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xTaXplXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Size/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xTaXplXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Tag/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xUYWdcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Tag/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xUYWdcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Tag/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xUYWdcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Tag/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xUYWdcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/Tag/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xUYWdcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxWaWV3c1xfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Areas/GamingArea/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcR2FtaW5nQXJlYVxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Accound/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VuZFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Accound/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VuZFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Contact/Contactcshtml.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxDb250YWN0Y3NodG1sLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Gaming/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcR2FtaW5nXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Shop/Collection.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxDb2xsZWN0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Shop/Detail.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxEZXRhaWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Shop/Shop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcFxTaG9wLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/Wishlist/Wishlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2lzaGxpc3RcV2lzaGxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nermin/Desktop/Gaming/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

@@ -1,0 +1,245 @@
+   #Contact-description {
+       margin-top: 100px;
+       margin-bottom: 60px;
+
+       .contact-desc {
+
+           .contact-name {
+               h1 {
+                   background: rgb(50, 15, 114);
+                   background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+               }
+
+           }
+
+           .description {
+               width: 482px;
+
+               p {
+                   color: white;
+               }
+           }
+       }
+   }
+
+
+
+
+
+
+
+
+
+   #Contact-address-form {
+
+       background-color: rgb(255, 255, 255);
+       height: 600px;
+       padding: 100px 0 0 0;
+       position: relative;
+
+       li {
+           list-style: none;
+           color: gray;
+       }
+
+       h5 {
+           color: gray;
+       }
+
+       .contact-title-form {
+           position: absolute;
+           top: -150px;
+           width: 650px;
+           z-index: 1;
+
+           .contact-title {
+               h1 {
+                   background: rgb(50, 15, 114);
+                   background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+                   -webkit-background-clip: text;
+                   -webkit-text-fill-color: transparent;
+               }
+
+               margin-bottom: 50px;
+           }
+
+           .contact-form {
+               height: 600px;
+               padding: 0px 20px;
+               border: 2px solid #7b35c8;
+               background: #fff;
+
+
+               .form-group {
+                   margin-top: 30px;
+
+                   label {
+                       font-size: 20px;
+                       color: gray;
+                       margin-bottom: 10px;
+                   }
+
+                   .form-control {
+                       position: relative;
+                       border: 1px solid gray;
+                       display: block;
+                       width: 100%;
+                       padding: 15px 20px;
+
+                       font-size: 13px;
+
+                       line-height: 1;
+                       border-radius: 0px 20px 0px 20px;
+                       color: gray;
+
+                   }
+
+                   textarea {
+                       resize: none;
+
+                   }
+
+               }
+           }
+       }
+
+       .btn {
+           border-top-right-radius: 20px;
+           border-bottom-left-radius: 20px;
+           margin-top: 30px;
+           background: rgb(49, 60, 204);
+           background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+           color: white;
+           width: 200px;
+           height: 50px;
+       }
+
+   }
+
+   @media only screen and (max-width:415px){
+    #Contact-address-form {
+
+        background-color: rgb(255, 255, 255);
+        height: 1500px;
+        padding: 100px 0 0 0;
+        position: relative;
+ 
+        li {
+            list-style: none;
+            color: gray;
+        }
+ 
+        h5 {
+            color: gray;
+        }
+ 
+        .contact-title-form {
+            position: static;
+            top: -150px;
+            width: 390px;
+            z-index: 0;
+ 
+            .contact-title {
+                h1 {
+                    background: rgb(50, 15, 114);
+                    background: linear-gradient(90deg, rgb(52, 113, 245) 0%, rgb(25, 41, 190) 35%, rgb(69, 10, 73) 100%);
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+ 
+                margin-bottom: 50px;
+            }
+ 
+            .contact-form {
+                height: 850px;
+                padding: 0px 20px;
+                border: 2px solid #7b35c8;
+                background: #fff;
+ 
+ 
+                .form-group {
+                    margin-top: 30px;
+ 
+                    label {
+                        font-size: 20px;
+                        color: gray;
+                        margin-bottom: 10px;
+                    }
+ 
+                    .form-control {
+                        position: relative;
+                        border: 1px solid gray;
+                        display: block;
+                        width: 100%;
+                        padding: 15px 20px;
+ 
+                        font-size: 13px;
+ 
+                        line-height: 1;
+                        border-radius: 0px 20px 0px 20px;
+                        color: gray;
+ 
+                    }
+ 
+                    textarea {
+                        resize: none;
+ 
+                    }
+ 
+                }
+            }
+        }
+ 
+        .btn {
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            margin-top: 30px;
+            background: rgb(49, 60, 204);
+            background: linear-gradient(90deg, rgb(19, 111, 250) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+            color: white;
+            width: 200px;
+            height: 50px;
+        }
+ 
+    }
+   }
+
+   @media only screen and (min-width:415px) and (max-width:820px) {
+
+
+       #Contact-description {
+
+           .contact-desc {
+
+               .description {
+
+                   p {
+                       color: white;
+                       width: 300px;
+                   }
+               }
+           }
+       }
+
+
+
+
+
+       #Contact-address-form {
+
+
+
+           .contact-title-form {
+               position: absolute;
+               top: -250px;
+               width: 380px;
+               z-index: 0;
+
+                 
+
+
+           }
+       }
+   }

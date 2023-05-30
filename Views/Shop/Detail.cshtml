@@ -1,0 +1,493 @@
+﻿@model GamingShop
+
+
+
+<section id="Detalik-section">
+    <div class="container">
+
+
+
+        <div class="row">
+            <div class="col-lg-6 col-md-6 title">
+                <div class="product-information">
+                    <div class="category-wishlist">
+                        <div class="category">
+                            @foreach (var item in Model.GamingCategory)
+                            {
+                                <span>@item.Category.Name</span>
+                            }
+                        </div>
+                        <a href=""><i class="fa-regular fa-heart"></i>Add To Wishlist</a>
+                    </div>
+                    <div class="name-description">
+                        <div class="icons-star">
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div class="name">
+                            <h1>@Model.Name</h1>
+                        </div>
+                        <div class="sku">
+                            <ul class="">
+                                <li>SKU: <span>@Model.SKU</span></li>
+                                <li>qewfqewfrqrrfq</li>
+                                <li>qfq</li>
+                            </ul>
+                        </div>
+                        <div class="description">
+                            <p>
+                                ERGONOMICALLY DESIGNED FOR HARDCORE GAMING : From its unique contours and angled seat edges, to its
+                                fully adjustable recline, tilt, and height, the Dr Luxur...
+                            </p>
+                        </div>
+                    </div>
+                    <div class="product-select">
+                        <div class="pro-lable">
+                        </div>
+                        <select name="select" id="">
+                            <option value="">bndy</option>
+                            <option value="">busdu</option>
+                        </select>
+                    </div>
+                    <div class="price-quantity">
+                        <div class="price">
+                            <h3>@Model.Price<sup>USD</sup></h3>
+                            <span class="price-item--sale">
+                                <del>@Model.DiscountPrice</del> <sup class="currency-type">USD</sup>
+                            </span>
+                        </div>
+                        <div class="quantity">
+                            <button style="background-color:black; height: 40px; width: 50px;" class="quantity__button no-js-hidden quantity-decrement " name="minus" type="button">
+                                <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 0.251343V1.74871H12V0.251343H0Z" fill="#61AFB3"></path>
+                                </svg>
+                            </button>
+                            <input class="quantity__input" type="number" name="quantity" id="Quantity-template--17223997915457__main" min="1" value="1" form="product-form-template--17223997915457__main">
+                            <button style="background-color:rgba(22, 98, 148, 0.582); height: 40px; width: 50px;" class="quantity__button no-js-hidden quantity-increment" name="plus" type="button">
+                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6.74868 5.25132V0H5.25132V5.25132H0V6.74868H5.25132V12H6.74868V6.74868H12V5.25132H6.74868Z" fill="#61AFB3"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="add-buy">
+                        <div class="add buyy btn btn-primary" onclick="addToCart()">Add To Cart</div>
+                        <div class="buy btn btn-primary">Buy it new</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 images">
+                <div class="row">
+                    <div class="vertical-slider col-12 ga-vertical-gallery" id="slider">
+                        <section class="services-slider">
+                            <div class="nav-container">
+                                <i class="fa fa-angle-up next"></i>
+                                <div class="slider-nav">
+                                    <div class="slider-nav">
+                                        <div>
+                                            <img src="~/assets/images/BodyImages/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                        </div>
+                                        @foreach (var item in Model.GamingImage)
+                                        {
+                                            <div>
+                                                <img src="~/assets/images/Products/@item.Path">
+                                            </div>
+                                        }
+                                    </div>
+                                </div>
+                                <i class="fa fa-angle-down prev "></i>
+                            </div>
+                            <div class="main-container">
+                                <div class="slider slider-main">
+                                    <div class="ssc">
+                                        <img class="eedd" src="~/assets/images/BodyImages/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                    </div>
+                                    @foreach (var item in Model.GamingImage)
+                                    {
+                                        <div class="ssc">
+                                            <img class="eedd" src="~/assets/images/Products/@item.Path">
+                                        </div>
+                                    }
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+</section>
+
+
+
+<section id="Product-description">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-12">
+                <div class="pro-descrip-left">
+                    <h3>Description:</h3>
+                    <p>
+                       @Model.Description
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-7 col-12">
+                <img src="//gaming-workdo.myshopify.com/cdn/shop/files/1233588.png?v=1671797552" class="pro-img" alt="image">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="Peoduct-tab">
+    <div class="full-container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 d-none d-lg-block  col-sm-6  col-12  tab-left">
+                <div class="left-image">
+                    <img style="width: 500px; margin-top: -40px;" src="~/assets/images/Products/product-cpu-ss.webp" alt="">
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12 pc">
+
+                <a style="text-decoration: none;" href="">
+                    <div class="item">
+                        <div style="padding: 20px;" class="product-card-image-type">
+
+                            <div style="color: white;" class="carts">
+                                console
+                            </div>
+                            <h4>Nintendo Switch Lite - Turquoise</h4>
+                            <div style="color: white;" class="product-type">
+                                TYPE:
+                                <p>
+                                </p>
+                            </div>
+                            <div class="product-title">
+                                <p>
+                                    Multiple connectivity options including HDMI, USB ports & RGB fans let you
+                                    connect a variety of peripherals easily. Wi-Fi Ready – Connect to the internet wirelessly with
+                                    ease. Preloaded with Windows 10 64-bit OS for enhanced productivity and multitasking.
+                                </p>
+                            </div>
+
+                            <span style="color: white;">458,56 <sup>usd</sup></span>
+
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+
+            <div class="col-xl-5 col-lg-4 col-md-6 col-12 tab-right">
+                <div class="right-image">
+                    <img src="~/assets/images/Products/double.cpu-ss.webp" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+
+
+<section id="Slider-product">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Best <br> <span>Pro Gaming</span> Products</h2>
+                <span style="color: gray;">
+                    More powerful hardware not only betters their experiences in games they're
+                    currently
+                    playing,<br> but it also gives many players access to titles with more demanding specifications.
+                </span>
+            </div>
+            <div class="owl-carousel products-item">
+                <div class="item">
+                    <a style="text-decoration: none;" href="">
+                        <div style="padding: 20px;" class="product-card-image-type">
+
+                            <div style="color: white;" class="carts">
+                                console
+                            </div>
+                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                            <div style="color: white;" class="product-type">
+                                TYPE:
+                                <p>
+                                </p>
+                            </div>
+                            <div class="product-images">
+                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                            </div>
+
+
+                            <span style="color: white;">458,56 <sup>usd</sup></span>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a style="text-decoration: none;" href="">
+                        <div style="padding: 20px;" class="product-card-image-type">
+
+                            <div style="color: white;" class="carts">
+                                console
+                            </div>
+                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                            <div style="color: white;" class="product-type">
+                                TYPE:
+                                <p>
+                                </p>
+                            </div>
+                            <div class="product-images">
+                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                            </div>
+
+                            <span style="color: white;">458,56 <sup>usd</sup></span>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a style="text-decoration: none;" href="">
+                        <div style="padding: 20px;" class="product-card-image-type">
+
+                            <div style="color: white;" class="carts">
+                                console
+                            </div>
+                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                            <div style="color: white;" class="product-type">
+                                TYPE:
+                                <p>
+                                </p>
+                            </div>
+                            <div class="product-images">
+                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                            </div>
+
+                            <span style="color: white;">458,56 <sup>usd</sup></span>
+
+                        </div>
+                    </a>
+
+                </div>
+                <div class="item">
+                    <a style="text-decoration: none;" href="">
+                        <div style="padding: 20px;" class="product-card-image-type">
+
+                            <div style="color: white;" class="carts">
+                                console
+                            </div>
+                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                            <div style="color: white;" class="product-type">
+                                TYPE:
+                                <p>
+                                </p>
+                            </div>
+                            <div class="product-images">
+                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                            </div>
+
+                            <span style="color: white;">458,56 <sup>usd</sup></span>
+
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+                                <script>
+
+
+
+    function setCookie(name, value, days) {
+        let expires = "";
+        if (days) {
+            let date = new Date();
+            date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + (value || "") + expires + "; path=/";
+    }
+
+    function getCookie(name) {
+        let nameEQ = name + "=";
+        let ca = document.cookie.split(';');
+        for (let i = 0; i < ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') c = c.substring(1, c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length, c.length);
+        }
+        return null;
+    }
+
+    let basketHTML = document.querySelector(".basket-menu .producct");
+
+    document.addEventListener("DOMContentLoaded", function () {
+        let basketStr = getCookie("basket");
+        let basket = JSON.parse(basketStr);
+
+        if (!basket || !basket.length) {
+            setCookie("basket", JSON.stringify([]));
+        } else {
+            ShowProductCount(basket);
+
+            basket.forEach((product) => {
+                AddToBasket(product);
+            });
+            ShowTotalPrice(basket);
+        }
+    });
+
+    let buttons = document.querySelectorAll(".buy");
+
+    buttons.forEach((button) => {
+        button.addEventListener("click", function () {
+            let basket = JSON.parse(getCookie("basket"));
+            if (!basket) {
+                setCookie("basket", JSON.stringify([]));
+                basket = JSON.parse(getCookie("basket"));
+            }
+            let product = GetProductDatas(this);
+
+            let existedProduct = basket.find((pro) => {
+                return pro.id == product.id;
+            });
+            if (!existedProduct) {
+                basket.push(product);
+            } else {
+                existedProduct.count++;
+            }
+            ShowProductCount(basket);
+
+            AddToBasket(product);
+
+            let basketStr = JSON.stringify(basket);
+            setCookie("basket", basketStr);
+            fetch("/Order/Create", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(product),
+            })
+                .then((response) => response.json())
+                .then((data) => {
+                    // Başarılı bir şekilde işlendiğinde yapılacak işlemler
+                    console.log("İstek başarılı", data);
+                    // İsteğin başarılı olduğunu kullanıcıya bildirmek için gerekli işlemleri yapabilirsiniz
+                })
+                .catch((error) => {
+                    // Hata durumunda yapılacak işlemler
+                    console.error("İstek hatası", error);
+                    // İsteğin hata verdiğini kullanıcıya bildirmek için gerekli işlemleri yapabilirsiniz
+                });
+        });
+    });
+
+    function ShowProductCount(basket) {
+        let basketCount = document.querySelectorAll(".basket-count");
+        basketCount.forEach(count => {
+            count.innerText = basket.reduce((total, product) => {
+                return (total += product.count);
+            }, 0);
+        });
+    }
+
+    function ShowTotalPrice(basket) {
+        let total = document.querySelectorAll(".price");
+        total.forEach(tt => {
+            tt.innerText = basket.reduce((total, product) => {
+                return (total += parseInt(product.price) * product.count);
+            }, 0);
+        });
+    }
+
+    function GetProductDatas(product) {
+        let parent = product.parentElement.parentElement;
+        let id = parent.getAttribute("data-id");
+        let title = parent.querySelector(".title").innerText;
+        let price = parent.querySelector(".prices").innerText;
+
+        let src = parent.querySelector("img").src;
+        let result = { id, title, price, src, count: 1 };
+        return result;
+    }
+
+    function AddToBasket(product) {
+        let id = product.id;
+        let basketItem = basketHTML.querySelector(`[data-id="${id}"]`);
+
+        if (basketItem) {
+            let count = basketItem.getAttribute("data-count");
+            count++;
+            basketItem.setAttribute("data-count", count);
+            basketItem.querySelector(".count").innerText = count;
+        } else {
+            let div = document.createElement("div");
+            let image = document.createElement("img");
+            let contentDiv = document.createElement("div");
+            let title = document.createElement("h5");
+            let price = document.createElement("span");
+            let count = document.createElement("p");
+            let closeBtn = document.createElement("i");
+
+            closeBtn.className = "btn btn-danger";
+            closeBtn.className = "fa-regular fa-trash-can";
+            closeBtn.style.position = "absolute";
+            closeBtn.style.right = "10px";
+            div.className = "basket-item";
+            div.style.position = "relative";
+            div.setAttribute("data-id", product.id);
+            div.setAttribute("data-count", 1);
+            div.style.width = "398px";
+            div.style.marginBottom = "10px";
+            div.style.alignItems = 'center';
+            div.style.padding = '20px 0';
+            div.style.border = '1px solid grey';
+            div.style.display = 'flex'
+
+            image.src = product.src;
+            image.style.width = "100px";
+            title.innerText = product.title;
+            price.innerText = product.price;
+            count.innerText = 1;
+            count.className = "count";
+
+            contentDiv.append(title, price, count);
+            div.append(image, contentDiv, closeBtn);
+            basketHTML.append(div);
+
+            closeBtn.addEventListener("click", function () {
+                let basket = JSON.parse(getCookie("basket"));
+                if (!basket) {
+                    setCookie("basket", JSON.stringify([]));
+                    basket = JSON.parse(getCookie("basket"));
+                }
+                let id = this.parentElement.getAttribute("data-id");
+                let index = basket.findIndex((element) => {
+                    return element.id == id;
+                });
+                delete basket[index];
+                basket = basket.filter(Boolean);
+                ShowProductCount(basket);
+
+                let basketStr = JSON.stringify(basket);
+                setCookie("basket", basketStr);
+                this.parentElement.remove();
+                ShowTotalPrice(basket);
+            });
+        }
+    }
+
+
+                                </script>

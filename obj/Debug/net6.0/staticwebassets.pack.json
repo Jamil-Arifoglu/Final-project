@@ -1,0 +1,673 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\css\\style.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\img\\testimonial-1.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\testimonial-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\img\\testimonial-2.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\testimonial-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\img\\user.jpg",
+      "PackagePath": "staticwebassets\\admin\\assets\\img\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\js\\main.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\js\\main.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\chart\\chart.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\chart\\chart.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\easing\\easing.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\easing\\easing.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\easing\\easing.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\easing\\easing.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\LICENSE",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\ajax-loader.gif",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\ajax-loader.gif"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.carousel.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.carousel.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.carousel.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.carousel.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.default.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.default.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.default.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.green.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.green.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.theme.green.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\assets\\owl.video.play.png",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\assets\\owl.video.play.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\owl.carousel.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\owl.carousel.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\owlcarousel\\owl.carousel.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\owlcarousel\\owl.carousel.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\css\\tempusdominus-bootstrap-4.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\js\\moment-timezone.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\js\\moment-timezone.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\js\\moment.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\js\\moment.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\tempusdominus\\js\\tempusdominus-bootstrap-4.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\waypoints\\links.php",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\waypoints\\links.php"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\lib\\waypoints\\waypoints.min.js",
+      "PackagePath": "staticwebassets\\admin\\assets\\lib\\waypoints\\waypoints.min.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_accordion.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_accordion.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_badge.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_badge.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_breadcrumb.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_breadcrumb.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_button-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_button-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_card.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_card.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_carousel.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_carousel.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_close.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_close.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_containers.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_containers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_dropdown.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_dropdown.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_functions.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_functions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_grid.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_helpers.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_helpers.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_images.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_images.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_mixins.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_mixins.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_modal.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_modal.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_nav.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_nav.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_navbar.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_navbar.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_offcanvas.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_offcanvas.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_popover.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_popover.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_progress.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_progress.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_reboot.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_root.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_root.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_spinners.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_spinners.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_tables.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_tables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_toasts.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_toasts.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_tooltip.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_tooltip.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_transitions.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_transitions.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_type.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_type.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_utilities.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\_variables.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\_variables.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-grid.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-reboot.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-reboot.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-utilities.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap-utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\bootstrap.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_floating-labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-check.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-check.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-control.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-control.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-range.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-range.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-select.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-select.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-text.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_form-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_input-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_input-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_labels.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_labels.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_validation.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\forms\\_validation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_colored-links.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_position.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_position.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_ratio.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_ratio.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_stretched-link.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_text-truncation.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\helpers\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_alert.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_alert.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_border-radius.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_box-shadow.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_breakpoints.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_buttons.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_buttons.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_caret.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_caret.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_clearfix.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_color-scheme.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_container.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_container.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_deprecate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_forms.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_forms.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_gradients.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_gradients.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_grid.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_grid.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_image.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_image.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_list-group.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_list-group.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_lists.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_lists.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_pagination.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_pagination.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_reset-text.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_resize.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_resize.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_table-variants.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_text-truncate.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_transition.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_transition.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_utilities.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_utilities.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\mixins\\_visually-hidden.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\utilities\\_api.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\utilities\\_api.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\admin\\assets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss",
+      "PackagePath": "staticwebassets\\admin\\assets\\scss\\bootstrap\\scss\\vendor\\_rfs.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\css\\Index.css",
+      "PackagePath": "staticwebassets\\assets\\css\\Index.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\css\\Index.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\Index.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\css\\main.css",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\css\\main.css.map",
+      "PackagePath": "staticwebassets\\assets\\css\\main.css.map"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\Half-bluthooth-left.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\Half-bluthooth-left.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\Half-bluthooth-right.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\Half-bluthooth-right.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\Half-bluthooth.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\Half-bluthooth.avif"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\about-us_f9e74f88-c6e8-473e-98e6-594078e45cc3-icone.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\about-us_f9e74f88-c6e8-473e-98e6-594078e45cc3-icone.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-1-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-1-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-2-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-2-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-2.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-2.avif"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-3--ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-3--ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-3-3.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-3-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\design-circle-3.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\design-circle-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\full-bluthooth-music.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\full-bluthooth-music.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\gx6-front-angle-1000__1_-removebg-preview_600x600--ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\gx6-front-angle-1000__1_-removebg-preview_600x600--ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\main-conent-games-1.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\main-conent-games-1.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\round-img-big-3.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\round-img-big-3.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\BodyImages\\round-img-small-2.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\BodyImages\\round-img-small-2.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Collections\\hjt-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Collections\\hjt-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Collections\\mk-dc.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Collections\\mk-dc.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258.avif",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258.avif"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\278laptop wallpaper _ Tumblr.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\278laptop wallpaper _ Tumblr.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\8317.png_860 (1)-ss.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\8317.png_860 (1)-ss.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\8317.png_860.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\8317.png_860.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\as-hyperx_cloud_alpha_black_1_main_1600x-removebg-preview_258x258.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\as-hyperx_cloud_alpha_black_1_main_1600x-removebg-preview_258x258.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\asa-gx6-back-1000-removebg-preview_258x258.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\asa-gx6-back-1000-removebg-preview_258x258.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\double-bluthoth-pp.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\double-bluthoth-pp.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\double.cpu-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\double.cpu-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\full-width-bluthhoth-dd.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\full-width-bluthhoth-dd.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\png-clipart-xbox-one-controller-game-controllers-video-game-console-accessories-video-game-consoles-gamepad-electronics-video-game.png",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\png-clipart-xbox-one-controller-game-controllers-video-game-console-accessories-video-game-consoles-gamepad-electronics-video-game.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\product-cpu-ss.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\product-cpu-ss.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\sa-1_4661881d-c8c7-4d3b-962e-038344e4ac81_258x258.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\sa-1_4661881d-c8c7-4d3b-962e-038344e4ac81_258x258.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\Products\\subscribe-img.webp",
+      "PackagePath": "staticwebassets\\assets\\images\\Products\\subscribe-img.webp"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\images\\logo\\logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png",
+      "PackagePath": "staticwebassets\\assets\\images\\logo\\logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Detail.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Detail.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Header.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Header.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Login.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Login.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Scroll.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Scroll.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Shop.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Shop.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\Wishlist.js",
+      "PackagePath": "staticwebassets\\assets\\js\\Wishlist.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\basket.js",
+      "PackagePath": "staticwebassets\\assets\\js\\basket.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\js\\gaming.js",
+      "PackagePath": "staticwebassets\\assets\\js\\gaming.js"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_Index.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_Index.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_collections.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_collections.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_contact.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_contact.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_detail.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_detail.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_login.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_login.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_register.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_register.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_shop.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_shop.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\_wishlist.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\_wishlist.scss"
+    },
+    {
+      "Id": "C:\\Users\\Nermin\\Desktop\\Gaming\\wwwroot\\assets\\scss\\main.scss",
+      "PackagePath": "staticwebassets\\assets\\scss\\main.scss"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.Gaming.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.Gaming.props",
+      "PackagePath": "build\\Gaming.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.Gaming.props",
+      "PackagePath": "buildMultiTargeting\\Gaming.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.Gaming.props",
+      "PackagePath": "buildTransitive\\Gaming.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,117 @@
+#Wishlist-Name {
+    .name {
+        h1 {
+            background: rgb(26, 34, 150);
+            background: linear-gradient(75deg, rgb(46, 16, 85) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+    .description {
+        width: 600px;
+
+        p {
+            color: gray;
+        }
+    }
+}
+
+
+
+
+
+#Wishlist {
+    width: 100%;
+    padding: 100px;
+
+    background-color: white;
+
+
+    height: 100%;
+
+    #wishlist-container {
+        .wishlist-product {
+            width: 290px;
+            height: 400px;
+            background-color: rgba(8, 100, 206, 0.178);
+
+            border-left: 2px solid rgba(68, 0, 255, 0.671);
+            border-right: 2px solid rgba(68, 0, 255, 0.671);
+            border-radius: 30px;
+            margin-right: 20px;
+
+            button {
+                border-top-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                border: 1px solid blue;
+                width: 200px;
+                height: 40px;
+                margin-left: 30px;
+                color: white;
+                background: rgb(49, 60, 204);
+                background: linear-gradient(90deg, rgba(19, 111, 250, 0.418) 0%, rgb(42, 26, 184) 35%, rgb(111, 0, 119) 100%);
+            }
+
+            :hover {
+
+                background: rgb(49, 60, 204);
+                background: linear-gradient(90deg, rgba(19, 111, 250, 0) 0%, rgba(42, 26, 184, 0) 35%, rgba(111, 0, 119, 0) 100%);
+                color: gray;
+                border-color: gray;
+            }
+
+        }
+    }
+
+}
+
+
+@media only screen and (max-width:415px) {
+    #Wishlist-Name {
+
+        .description {
+            width: 400px;
+
+            p {
+                font-size: 15px;
+                color: gray;
+            }
+        }
+    }
+
+
+    #Wishlist {
+        width: 100%;
+        padding: 30px;
+
+        background-color: white;
+
+
+        height: 100%;
+
+        #wishlist-container {
+            .wishlist-product {
+                margin-bottom: 20px;
+                width: 390px;
+                height: 340px;
+                padding: 20px;
+
+                img {
+
+                    width: 200px;
+                }
+
+                button {
+                    border-top-right-radius: 20px;
+
+                    width: 150px;
+
+                }
+
+
+            }
+        }    
+
+    }
+}

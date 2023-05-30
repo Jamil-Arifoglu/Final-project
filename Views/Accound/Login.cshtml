@@ -1,0 +1,65 @@
+﻿@model LoginVM
+
+<section id="Login">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>Log In</h1>
+
+                <div class="login-wrapper">
+                    <div class="login">
+                        <p><b>Log In</b></p>
+                    </div>
+                    <form asp-action="Login" method="post">
+                        <div class="email-password">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <p>I am a returning customer</p>
+                                    </div>
+                                    <div class="email col-lg-6 col-md-6 col-12">
+                                        <div class="form-group">
+                                            <label asp-for="Username">Username</label>
+                                            <input type="text" class="form-control" asp-for="Username" />
+                                            <span asp-validation-for="Username" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                    <div class="password col-lg-6 col-md-6 col-12">
+                                        <label asp-for="Password">Password:</label><br>
+                                        <input asp-for="Password" class="form-control" type="password"  id="CustomerPassword"
+                                               autocomplete="current-password" placeholder="Password">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="check-box">
+                                            <input asp-for="RememberMe">
+                                            <label asp-for="RememberMe">Remember me</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="forget-button-pass" style="border-bottom: 1px solid rgb(192, 192, 192);">
+                            <div class="container">
+                                <div class="forget-button ">
+                                    <div class="forget">
+                                        <a asp-controller="Account" asp-action="Register" class="forget-pass">
+                                            Forgot Password?
+                                        </a>
+                                    </div>
+                                    <div class="button-login">
+                                        <button class="loginn btn btn-primary">Login <i class="fa-solid fa-arrow-right"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="register">
+                            <span>If you don't have an account</span>
+                            <button class="btn btn-primary">Register <i class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

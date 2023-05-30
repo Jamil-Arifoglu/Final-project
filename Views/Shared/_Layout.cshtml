@@ -1,0 +1,414 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" /> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css"
+          href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/assets/css/main.css">
+
+    <title>Home Page</title>
+</head>
+
+<body style="background-color: rgb(0,0,0);">
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <header class="d-none d-lg-block d-md-block">
+        <div class="container">
+            <div class="row">
+                <div class="menu-nav col-4">
+                    <ul>
+                        <li class="gaming">
+                            <p>Gaming Accessories</p>
+
+                            <div class="drone-text-seconds">
+                                <div class="indoor">
+                                    <h4>
+                                        Ryze Tello
+                                    </h4>
+                                    <hr style="width: 100px;">
+                                    <ul>
+                                        <li> PowerVision</li>
+                                        <li> PowerVision Wizard</li>
+                                        <li> Snaptain SP500</li>
+                                    </ul>
+                                </div>
+                                <div class="indoor">
+                                    <h5>
+                                        Force 1 Scoot LED
+                                    </h5>
+                                    <hr style="width: 100px;">
+                                    <ul>
+                                        <li> DJI Mini 2</li>
+                                        <li> EMAX TinyHawk</li>
+                                        <li> Potensic A20</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="pages">
+                            Pages
+                            <div class="drone-text">
+                                <div class="indoor">
+
+
+                                    <ul>
+                                        <li> Parrot Mambo</li>
+                                        <li>Potensic A20W</li>
+                                        <li> Ryze Tello</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu-right col-8">
+                    <div class="logo">
+                        <a href="">
+                            <img src="~/assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                                 alt="">
+                        </a>
+                    </div>
+                    <ul class="icons">
+                        <li class="account">
+                            <a href=""><i class="fa-regular fa-user"></i></a>
+                            <div class="user-menu">
+                                <ul class="menu-ul">
+                                    <a href="./Registrator.html" style="text-decoration: none;">
+                                    <li>Register </li>
+                                    </a>
+                                    <a href="./login.html" style="text-decoration: none;">
+                                    <li>Login</li>
+                                    </a>
+
+
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="wish-list">
+                            <a asp-controller="Wishlist" asp-action="Wishlist">
+                                <i class="fa-regular fa-heart">
+                                    <sup class="wishlist-count">0</sup>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="my-cart">
+                            My Cart <br>
+                            <b class="price">0 <span>USD</span></b>
+                        </li>
+                        <li class="basket">
+                            <i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <header class="d-none d-lg-block d-md-none fixed-top second-header">
+        <div class="container">
+            <div class="row">
+                <div class="menu-nav col-4">
+                    <ul>
+                        <li class="Gaming">
+                            Gaming Accessories
+                            <div class="drone-text-second">
+                                <div class="indoor">
+                                    <h4>
+                                        Ryze Tello
+                                    </h4>
+                                    <hr style="width: 100px;">
+                                    <ul>
+                                        <li> PowerVision</li>
+                                        <li> PowerVision Wizard</li>
+                                        <li> Snaptain SP500</li>
+                                    </ul>
+                                </div>
+                                <div class="indoor">
+                                    <h5>
+                                        Force 1 Scoot LED
+                                    </h5>
+                                    <hr style="width: 100px;">
+                                    <ul>
+                                        <li> DJI Mini 2</li>
+                                        <li> EMAX TinyHawk</li>
+                                        <li> Potensic A20</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li class="Pages">
+                            Pages
+                            <div class="page-text ">
+                                <div class="indoor">
+                                    <ul>
+                                        <li> Parrot Mambo</li>
+                                        <li>Potensic A20W</li>
+                                        <li> Ryze Tello</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu-right col-8">
+                    <div class="logo">
+                        <a href="">
+                            <img src="assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                                 alt="">
+                        </a>
+                    </div>
+                    <ul class="icons">
+                        <li class="accounts">
+                            <a href=""><i class="fa-regular fa-user"></i></a>
+                            <div class="users-menu">
+                                <ul class="menuu-ul">
+                                    <a href="./Registrator.html" style="text-decoration: none;">
+                                    <li>Register </li>
+                                    </a>
+                                    <a href="./login.html" style="text-decoration: none;">
+                                    <li>Login</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="wish-list">
+                            <a href="./Wishlist.html">
+                                <i class="fa-regular fa-heart">
+                                    <sup class="wishlist-count">0</sup>
+                                </i>
+                            </a>
+                        </li>
+                        <li class="my-cart">
+                            My Cart <br>
+                            <b class="price">0 <span>USD</span></b>
+                        </li>
+                        <li class="baske">
+                            <i class="fa-solid fa-cart-shopping"></i> <span class="basket-count">0</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <header class="header d-lg-none d-md-none d-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <div class="logo">
+                        <img src="~/assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt="">
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="icons">
+                        <div class="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+
+                        </div>
+                        <div class="accountss">
+                            <i class="fa-regular fa-user"></i>
+                            <div class="userr-menu">
+                                <ul class="menu-ul">
+                                    <a href="./Registrator.html" style="text-decoration: none;">
+                                    <li>Register </li>
+                                    </a>
+                                    <a href="./login.html" style="text-decoration: none;">
+                                    <li>Login</li>
+                                    </a>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="wish-list">
+                            <a href="./Wishlist.html"><i class="fa-regular fa-heart"><sup class="wishlist-count">0</sup></i></a>
+                        </div>
+                        <div class="basket">
+                            <i class="fa-solid fa-cart-shopping"> <sup class="basket-count">0</sup></i>
+                        </div>
+                        <div class="mobail-menu bars">
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <hr style="color: white;">
+    <div class="basket-menu-exit">
+
+        <div class="basket-menu">
+            <div class="Basket-first-child">
+                <i class="exit fa-solid fa-xmark"></i>
+                <span><b>MY CART</b></span>
+                <span class="right basket-count">0 <b>ITEM</b></span>
+
+                <hr>
+            </div>
+            <div class="producct">
+            </div>
+            <hr>
+            <div class="cart-checkout">
+                <div class="sub-total d-flex   justify-content-around">
+                    <h5>SUBTITLE:</h5>
+                    <b class="price">0 <sup>USD</sup></b>
+                </div>
+                <br>
+                <button type="button" id="checkout" class="checkout-btn btn-primary" name="checkout" form="cart">
+                    Proceed to
+                    checkout
+                </button>
+                <br><a href="/cart" class="link-btn" form="cart">
+                    View Cart
+
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <style>
+        i {
+            transform: rotate(0deg);
+            transition: 1.8s;
+        }
+
+            i.active {
+                transform: rotate(180deg);
+                transition: 1.8s;
+            }
+    </style>
+    <div class="bars-menu-exit">
+
+        <div class="bars-menu">
+            <div class="bars-first-child">
+                <i class="exit fa-solid fa-xmark"></i>
+                <hr>
+            </div>
+            <div class="Accordion">
+                <div class="close">PRICE<i style="margin-left: 350px;" class="fa-solid fa-chevron-down"></i></div>
+                <div class="lorem">
+                    <div class="close">PRICE<i style="margin-left: 280px;" class="fa-solid fa-chevron-down"></i></div>
+                    <div class="lorem">
+                    </div>
+
+                    <div class="close">PRODUCT TYPE<i style="margin-left: 212px;" class="fa-solid fa-chevron-down"></i></div>
+                    <div class="lorem">
+                    </div>
+
+                </div>
+
+                <div class="close">PRODUCT TYPE<i style="margin-left: 280px;" class="fa-solid fa-chevron-down"></i></div>
+                <div class="lorem">
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="footer-logo-title">
+                            <div class="logo">
+                                <img src="~/assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png" alt="">
+                            </div>
+                            <h4>Reach out & let your <b>mind explore</b></h4>
+                            <p>Enjoy browsing our page</p>
+                            <span>© 2023,Gaming WorkDo,Powered by Shopify</span>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="navigation">
+                            <h6>NAVIGATION:</h6>
+                            <ul>
+                                <li>Search</li>
+                                <li>All Products</li>
+                                <li> Article Page</li>
+
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <div class="about">
+                            <h6>ABOUT US:</h6>
+                            <ul>
+                                <li>About Us</li>
+                                <li>Contact with us</li>
+                                <li>FAQ's</li>
+                                <li> Shipping & Delivery</li>
+                                <li>Privacy Policy</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-12">
+                        <h6 style="color: white;">SHARE:</h6>
+                        <div class="icons">
+                            <div class="youtube margin">
+                                <i class="fa-brands fa-square-youtube"></i>
+                            </div>
+                            <div class="messenger margin">
+                                <i class="fa-brands fa-facebook-messenger"></i>
+                            </div>
+                            <div class="instagram margin">
+                                <i class="fa-brands fa-instagram"></i>
+                            </div>
+                            <div class="twitter margin">
+                                <i class="fa-brands fa-twitter"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+            integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="~/assets/js/Scroll.js"></script>
+    <script src="~/assets/js/Wishlist.js"></script>
+    <script src="~/assets/js/basket.js"></script>
+    <script src="~/assets/js/Header.js"></script>
+    <script src="~/assets/js/Shop.js"></script>
+    <script src="~/assets/js/gaming.js"></script>
+    <script src="~/assets/js/Detail.js"></script>
+    <script src="~/assets/js/Login.js"></script>
+    @RenderSection("Scripts",false)
+</body>
+</html>

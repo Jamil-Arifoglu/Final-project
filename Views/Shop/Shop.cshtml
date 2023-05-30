@@ -1,0 +1,150 @@
+﻿@model List<GamingShop>
+
+<section id="Page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-12">
+                <div class="section-title">
+                    <h2>Products</h2>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    i {
+        transform: rotate(0deg);
+        transition: 1.8s;
+    }
+
+        i.active {
+            transform: rotate(180deg);
+            transition: 1.8s;
+        }
+</style>
+
+
+
+<section id="Product-section" style="background-color: white;">
+    <div class="product-collection">
+        <div class="container">
+            <div class="row">
+   
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="select-title">
+                                <div class="title">
+                                    <h4>Products</h4>
+                                </div>
+                                <div class="select">
+                                    <h5>Sort by:</h5>
+                                    <select name="" id="sort-select">
+                                        <option value="manual">Featured</option>
+                                        <option value="best-selling">Best selling</option>
+                                        <option value="title-ascending">Alphabetically, A-Z</option>
+                                        <option value="title-descending">Alphabetically, Z-A</option>
+                                        <option value="price-ascending">Price, low to high</option>
+                                        <option value="price-descending">Price, high to low</option>
+                                        <option value="created-ascending">Date, old to new</option>
+                                        <option value="created-descending">Date, new to old</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="row g-4">
+                              @foreach (var item in Model)
+                                {
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                            <div class="item" data-id="1">
+                                        <a style="text-decoration: none;" asp-controller="Shop" asp-action="Detail" asp-route-id="@item.Id">
+                                                <div style="padding: 20px;" class="product-card-image-type">
+                                                    <div class="wishlist-button"><i class="fa-regular fa-heart" style="color: brown;"></i></div>
+                                                    @foreach (var gaming in item.GamingCategory)
+                                                    {
+                                                    
+                                                    
+                                                       
+                                                            <div style="color: white;" class="carts">@gaming.Category.Name</div>
+                                                        
+                                                   
+                                                    }
+                                                    <div class="wishlist-button"></div>
+                                                    <h4 style="color: white;">@item.Name</h4>
+                                                    <div style="color: white;" class="product-type">
+                                                        TYPE:
+                                                        <p></p>
+                                                    </div>
+                                                    <div class="product-images">
+                                                        <img src="~/assets/images/Products/@item.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path" 
+                                                             alt="">
+                                                    </div>
+                                                    <span style="color: white;">@item.Price <sup>usd</sup></span>
+                                                </div>
+                                        </a>
+                                            </div>
+
+                                    </div>
+                                }
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<script>
+    // Sort select elementi değiştiğinde çalışacak fonksiyon
+    function sortProducts() {
+        var selectElement = document.getElementById("sort-select");
+        var selectedValue = selectElement.value; // Seçilen değeri al
+
+        var productContainer = document.querySelector(".row.g-4"); // Ürünlerin bulunduğu konteynerı seç
+
+        // Ürünleri sırala
+        var sortedProducts = Array.from(productContainer.children).sort(function (a, b) {
+            var aName = a.querySelector("h4").textContent; // Ürün adını al
+            var bName = b.querySelector("h4").textContent;
+
+            // Seçilen sıralama türüne göre karşılaştırma yap
+            if (selectedValue === "title-ascending") {
+                return aName.localeCompare(bName);
+            } else if (selectedValue === "title-descending") {
+                return bName.localeCompare(aName);
+            } else if (selectedValue === "price-ascending") {
+                var aPrice = parseFloat(a.querySelector("span").textContent);
+                var bPrice = parseFloat(b.querySelector("span").textContent);
+                return aPrice - bPrice;
+            } else if (selectedValue === "price-descending") {
+                var aPrice = parseFloat(a.querySelector("span").textContent);
+                var bPrice = parseFloat(b.querySelector("span").textContent);
+                return bPrice - aPrice;
+            } else {
+                return 0; // Diğer durumlarda sıralama yapma
+            }
+        });
+
+        // Sıralanmış ürünleri konteynere ekle
+        sortedProducts.forEach(function (product) {
+            productContainer.appendChild(product);
+        });
+    }
+
+    // Sort select elementinin değişimini dinle
+    var sortSelect = document.getElementById("sort-select");
+    sortSelect.addEventListener("change", sortProducts);
+</script>
+
+
+
+
