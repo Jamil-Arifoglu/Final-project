@@ -1,60 +1,54 @@
-﻿//using Gaming.DAL;
-//using Gaming.Entities;
-//using Gaming.ViewModels;
-//using Microsoft.AspNetCore.Identity;
-//using Microsoft.AspNetCore.Mvc;
+﻿using Gaming.DAL;
+using Gaming.Entities;
+using Gaming.ViewModels;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using System;
 
-//namespace Gaming.Controllers
-//{
-//    public class ContactController : Controller
-//    {
-//        private readonly UserManager<User> _userManager;
-//        private readonly SignInManager<User> _signInManager;
-//        private readonly GamingDbContext _dbContext;
+namespace Gaming.Controllers
+{
+    public class ContactController : Controller
+    {
+        private readonly UserManager<User> _userManager;
+        private readonly GamingDbContext _dbContext;
 
-//        public ContactController(UserManager<User> userManager, SignInManager<User> signInManager, GamingDbContext dbContext)
-//        {
-//            _userManager = userManager;
-//            _signInManager = signInManager;
-//            _dbContext = dbContext;
-//        }
+        public ContactController(UserManager<User> userManager, GamingDbContext dbContext)
+        {
+            _userManager = userManager;
+            _dbContext = dbContext;
+        }
 
-//        public IActionResult Contact()
-//        {
-//            return View();
-//        }
+        public IActionResult Contact()
+        {
+            return View();
+        }
 
-//        [HttpPost]
-//        public IActionResult Contact(ContactVM model)
-//        {
-//            if (ModelState.IsValid)
-//            {
-//                // Yeni bir Contact nesnesi oluştur
-//                var User = new User
-//                {
-//                    FirstName = model.FirstName,
-//                    LastName = model.LastName,
-//                    Email = model.Email,
+        [HttpPost]
+        public IActionResult Contact(ContactVM model)
+        {
+            if (ModelState.IsValid)
+            {
+                var contact = new Contact
+                {
+                    FirstName = model.FirstName,
+                    LastName = model.LastName,
+                    Email = model.Email,
+                    PhoneNumber = model.PhoneNumber,
+                    Description = model.Description,
+                    CreationTime = DateTime.Now
+                };
 
-//                    Description = model.Description,
-//                    CreationTime = DateTime.Now
-//                };
+                _dbContext.Contacts.Add(contact);
+                _dbContext.SaveChanges();
 
-//                // Contact nesnesini veritabanına kaydet
-//                _dbContext.Contacts.Add(contact);
-//                _dbContext.SaveChanges();
+                TempData["SuccessMessage"] = "Your message has been successfully submitted. We will get back to you shortly.";
 
-//                // İletişim formu başarıyla gönderildiyse, teşekkür sayfasına yönlendir
-//                return RedirectToAction("ThankYou");
-//            }
+                return RedirectToAction("Contact");
+            }
 
-//            // Model geçerli değilse, formu aynı sayfada tekrar göster ve hataları görüntüle
-//            return View(model);
-//        }
+            return View(model);
+        }
 
-//        public IActionResult ThankYou()
-//        {
-//            return View();
-//        }
-//    }
-//}
+
+    }
+}

@@ -1,0 +1,47 @@
+﻿
+@model List<GamingShop>
+
+<section id="Slider-product">
+    <div class="container">
+        <div class="row">
+            <div class="section-title">
+                <h2>Best <br> <span>Pro Gaming</span> Products</h2>
+                <span style="color: gray;">
+                    More powerful hardware not only betters their experiences in games they're
+                    currently
+                    playing,<br> but it also gives many players access to titles with more demanding specifications.
+                </span>
+            </div>
+            <div class="owl-carousel products-item">
+                @foreach (var product in Model)
+                {
+                    <div class="item">
+                        <a style="text-decoration: none;" href="">
+                            <div style="padding: 20px;" class="product-card-image-type">
+
+                                <div style="color: white;" class="carts">
+                                    console
+                                </div>
+                                <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                                <div style="color: white;" class="product-type">
+                                    TYPE:
+                                    <p>
+                                    </p>
+                                </div>
+                                <div class="product-images">
+                                    <img  src="~/assets/images/Products/@product.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                </div>
+
+
+                                <span style="color: white;">@product.Price <sup>usd</sup></span>
+
+                            </div>
+                        </a>
+
+                    </div>
+                }
+
+            </div>
+        </div>
+    </div>
+</section>

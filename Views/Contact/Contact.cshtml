@@ -1,0 +1,125 @@
+﻿@{
+    var successMessage = TempData["SuccessMessage"] as string;
+}
+
+<section id="Contact-description">
+
+    <div class="container">
+        <div class="contact-desc">
+            <div class="contact-name">
+                <h1>Contact with us</h1>
+            </div>
+            <div class="description">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Placeat aliquid quisquam magni odio nam
+                    enim odit assumenda quibusdam
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="Contact-address-form">
+    <div class="container">
+
+        <div class="row address-form">
+            <div class="col-lg-5 col-md-6 col-12">
+                <div class="row">
+                    <ul class="col-lg-6 col-md-6 col-12">
+                        <li>
+                            <h5>
+                                CALL US
+                            </h5>
+                            <p>+48 0021-32-12</p>
+                        </li>
+                        <li>
+                            <h5>EMAIL:</h5>
+                            <p>shop@company.com</p>
+                        </li>
+                    </ul>
+                    <ul class="col-lg-6 col-md-6 col-12">
+                        <li>
+                            <h5>
+                                ADDRESS:
+                            </h5>
+                            <p class="address">1093 Marigold Lane,<br> Coral Way, Miami,<br> Florida, 33169</p>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-7 col-md-6 col-12">
+                <div class="contact-title-form">
+                    <div class="contact-title">
+                        <h1>Contact form</h1>
+                    </div>
+                    @if (!string.IsNullOrEmpty(successMessage))
+                    {
+                        <div id="successMessage" class="alert alert-success">
+                            @successMessage
+                        </div>
+                    }
+                    <form asp-action="Contact" method="post" id="ContactForm" accept-charset="UTF-8" class="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="FirstName">
+                                        First name <sup>*</sup>:
+                                    </label>
+                                    <input type="text" class="form-control" autocomplete="name" id="FirstName" name="FirstName" placeholder="First name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="LastName">
+                                        Last name <sup>*</sup>:
+                                    </label>
+                                    <input type="text" class="form-control" autocomplete="name" id="LastName" name="LastName" placeholder="Last name" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="Email">
+                                        Email <sup>*</sup>:
+                                    </label>
+                                    <input class="form-control" autocomplete="email" type="email" id="Email" name="Email" spellcheck="false" autocapitalize="off" aria-required="true" placeholder="shop@company.com" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <div class="form-group">
+                                    <label for="PhoneNumber">
+                                        Phone number <sup>*</sup>:
+                                    </label>
+                                    <input class="form-control" type="tel" id="PhoneNumber" autocomplete="tel" name="PhoneNumber" pattern="[0-9\-]*" value="" placeholder="Phone number" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12">
+                                <div class="form-group">
+                                    <label for="Description">Description</label>
+                                    <textarea class="form-control" name="Description" id="Description" rows="10" placeholder="How Can We Help?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 col-12">
+                                <button type="submit" class="btn submit-btn">Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<script>
+    // Bildirimi otomatik olarak silmek için JavaScript kodu
+    setTimeout(function () {
+        var successMessage = document.getElementById("successMessage");
+        if (successMessage) {
+            successMessage.remove();
+        }
+    }, 5000); // 5 saniye bekleyip bildirimi sil
+</script>

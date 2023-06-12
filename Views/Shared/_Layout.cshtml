@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Gaming.Utilities.Roles;
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -29,6 +30,7 @@
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
+  
     <header class="d-none d-lg-block d-md-block">
         <div class="container">
             <div class="row">
@@ -37,28 +39,23 @@
                         <li class="gaming">
                             <p>Gaming Accessories</p>
 
-                            <div class="drone-text-seconds">
+                            <div class="drone-text-seconds" style="width:800px;">
                                 <div class="indoor">
-                                    <h4>
-                                        Ryze Tello
+                                    <h4 style="color:black;  font-size:15px;">
+                                        Pro Gaming
                                     </h4>
-                                    <hr style="width: 100px;">
+                                
                                     <ul>
-                                        <li> PowerVision</li>
-                                        <li> PowerVision Wizard</li>
-                                        <li> Snaptain SP500</li>
+                                        <li>   Game Console</li>
+                                    
+                                        <li> Gaming Cards</li>
+                                        <li> Gaming Chairs</li>
+                                        <li>    Gaming Moniter</li>
+                                        <li>    Gaming PCs</li>
                                     </ul>
                                 </div>
                                 <div class="indoor">
-                                    <h5>
-                                        Force 1 Scoot LED
-                                    </h5>
-                                    <hr style="width: 100px;">
-                                    <ul>
-                                        <li> DJI Mini 2</li>
-                                        <li> EMAX TinyHawk</li>
-                                        <li> Potensic A20</li>
-                                    </ul>
+                                   <img src="" />
                                 </div>
 
                             </div>
@@ -70,9 +67,13 @@
 
 
                                     <ul>
-                                        <li> Parrot Mambo</li>
-                                        <li>Potensic A20W</li>
-                                        <li> Ryze Tello</li>
+                                        <a asp-controller="Shop" asp-action="Collection">
+                                        <li> Callection</li></a>
+                                        <a asp-controller="Contact" asp-action="Contact">
+                                        <li>Contact</li></a>
+                                        <a asp-controller="Wishlist" asp-action="wishlist">
+                                        <li>Wishlist</li></a>
+                                      
                                     </ul>
                                 </div>
 
@@ -83,22 +84,43 @@
                 </div>
                 <div class="menu-right col-8">
                     <div class="logo">
-                        <a href="">
+                        <a asp-controller="Gaming" asp-action="index">
                             <img src="~/assets/images/logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
                                  alt="">
                         </a>
                     </div>
                     <ul class="icons">
+                        <div class="search" style="color:white;">
+                            <a asp-controller="Search" asp-action="Search" style="text-decoration:none;  color: beige;
+                font-size: 25px; margin-right:20px;">  <i class="fa-solid fa-magnifying-glass"></i></a>
+
+                        </div>
                         <li class="account">
                             <a href=""><i class="fa-regular fa-user"></i></a>
                             <div class="user-menu">
                                 <ul class="menu-ul">
-                                    <a href="./Registrator.html" style="text-decoration: none;">
-                                    <li>Register </li>
-                                    </a>
-                                    <a href="./login.html" style="text-decoration: none;">
-                                    <li>Login</li>
-                                    </a>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li style="color:darkred"><span class="dropdown-item"><b>@User.Identity.Name</b></span></li>
+                                        if (User.IsInRole(Roles.Admin.ToString()) || User.IsInRole(Roles.Admin.ToString()))
+                                        {
+                                            <li style="color:darkred">
+                                                <a class="dropdown-item" asp-area="FoxicAdmin" asp-controller="Clothes" asp-action="Index"><b>Admin Panel</b></a>
+                                            </li>
+                                        }
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="Detail">My account</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="LogOut">Log out</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+
+                                        <li><a asp-controller="Account" asp-action="Login">Log In<i class="icon-login"></i></a></li>
+                                        <li><a asp-controller="Account" asp-action="Register">Register<i class="icon-user2"></i></a></li>
+                                    }
 
 
                                 </ul>
@@ -132,28 +154,23 @@
                     <ul>
                         <li class="Gaming">
                             Gaming Accessories
-                            <div class="drone-text-second">
+                            <div class="drone-text-second" style="width:800px;">
                                 <div class="indoor">
-                                    <h4>
-                                        Ryze Tello
+                                    <h4 style="color:black;  font-size:15px;">
+                                        Pro Gaming
                                     </h4>
-                                    <hr style="width: 100px;">
+
                                     <ul>
-                                        <li> PowerVision</li>
-                                        <li> PowerVision Wizard</li>
-                                        <li> Snaptain SP500</li>
+                                        <li>   Game Console</li>
+                                 
+                                        <li> Gaming Cards</li>
+                                        <li> Gaming Chairs</li>
+                                        <li>    Gaming Moniter</li>
+                                        <li>    Gaming PCs</li>
                                     </ul>
                                 </div>
                                 <div class="indoor">
-                                    <h5>
-                                        Force 1 Scoot LED
-                                    </h5>
-                                    <hr style="width: 100px;">
-                                    <ul>
-                                        <li> DJI Mini 2</li>
-                                        <li> EMAX TinyHawk</li>
-                                        <li> Potensic A20</li>
-                                    </ul>
+                                     <img src="" />
                                 </div>
 
                             </div>
@@ -163,9 +180,13 @@
                             <div class="page-text ">
                                 <div class="indoor">
                                     <ul>
-                                        <li> Parrot Mambo</li>
-                                        <li>Potensic A20W</li>
-                                        <li> Ryze Tello</li>
+                                        <a asp-controller="Shop" asp-action="Collection">      <li> Callection</li></a>
+                                        <a asp-controller="Contact" asp-action="Contact"> <li>Contact</li></a>
+                                        <a asp-controller="Wishlist" asp-action="wishlist">   <li>Wishlist</li></a>
+                                      
+                                    
+                                        
+                                       
                                     </ul>
                                 </div>
 
@@ -176,8 +197,8 @@
                 </div>
                 <div class="menu-right col-8">
                     <div class="logo">
-                        <a href="">
-                            <img src="assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
+                        <a asp-controller="Gaming" asp-action="index">
+                            <img src="~/assets/images/./logo/logo_aceeaa59-f6d4-423f-86f0-8c025cf33812.png"
                                  alt="">
                         </a>
                     </div>
@@ -186,11 +207,30 @@
                             <a href=""><i class="fa-regular fa-user"></i></a>
                             <div class="users-menu">
                                 <ul class="menuu-ul">
-                                    <a href="./Registrator.html" style="text-decoration: none;">
-                                    <li>Register </li>
-                                    </a>
-                                    <a href="./login.html" style="text-decoration: none;">
-                                    <li>Login</li>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <li style="color:darkred"><span class="dropdown-item"><b>@User.Identity.Name</b></span></li>
+                                        if (User.IsInRole(Roles.Admin.ToString()) || User.IsInRole(Roles.Admin.ToString()))
+                                        {
+                                            <li style="color:darkred">
+                                                <a class="dropdown-item" asp-area="FoxicAdmin" asp-controller="Clothes" asp-action="Index"><b>Admin Panel</b></a>
+                                            </li>
+                                        }
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="Detail">My account</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" asp-controller="Account" asp-action="LogOut">Log out</a>
+                                        </li>
+                                    }
+                                    else
+                                    {
+                                        <a asp-controller="Account" asp-action="Login">
+                                        <li>Log In<i class="icon-login"></i></li></a>
+                                        <a asp-controller="Account" asp-action="Register">
+                                        <li>Register<i class="icon-user2"></i></li>
+                                        </a>
+                                    }
                                 </ul>
                             </div>
                         </li>
@@ -224,7 +264,7 @@
                 <div class="col-9">
                     <div class="icons">
                         <div class="search">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <a  asp-controller="Search" asp-action="Search">  <i class="fa-solid fa-magnifying-glass"></i></a>
 
                         </div>
                         <div class="accountss">
@@ -280,7 +320,7 @@
                     Proceed to
                     checkout
                 </button>
-                <br><a href="/cart" class="link-btn" form="cart">
+                <br><a asp-controller="Shop" asp-action="Cart" class="link-btn" form="cart">
                     View Cart
 
                 </a>
@@ -409,6 +449,8 @@
     <script src="~/assets/js/gaming.js"></script>
     <script src="~/assets/js/Detail.js"></script>
     <script src="~/assets/js/Login.js"></script>
+
+  
     @RenderSection("Scripts",false)
 </body>
 </html>

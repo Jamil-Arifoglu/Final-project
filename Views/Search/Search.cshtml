@@ -1,0 +1,44 @@
+﻿@model List<GamingShop>
+
+<section style="width:100%;background-color:white;align-items:center; height:100%; padding:60px;">
+
+<h2 style="color:blueviolet;">Product search</h2>
+
+
+    <form method="post" action="/Search/Search">
+        <input style="width:95%;" type="text" name="searchTerm" placeholder="Arama yap..." />
+        <button class="btn btn-primary" style="background-color:blueviolet;" type="submit">Ara</button>
+    </form>
+
+    <hr />
+
+    @if (Model != null && Model.Count > 0)
+    {
+        <h5>Products found:</h5>
+
+        <ul>
+            @foreach (var product in Model)
+            {
+                <a asp-controller="Shop" asp-action="Detail" asp-route-id="@product.Id" style="text-decoration:none; color:black;">
+                <li style="list-style:none;">
+                    <p>@product.Name</p>
+
+
+                    <img src="~/assets/images/Products/@product.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+
+
+
+                </li>
+                
+
+                </a>
+            }
+        </ul>
+    }
+    else
+    {
+        <p>
+            Product not found.
+        </p>
+    }
+</section>

@@ -1,6 +1,7 @@
 ﻿using Gaming.DAL;
 using Gaming.Entities;
 using Gaming.Utilities.Extensions;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -45,16 +46,42 @@ namespace Gaming.Controllers
             return View(gamingList);
         }
 
+
+        [Authorize]
+
         public IActionResult Detail(int id)
         {
-            IQueryable<GamingShop> gaming = _context.Gamings.AsNoTracking().AsQueryable();
-            GamingShop? gamings = gaming.Include(ci => ci.GamingImage)
-                                               .Include(cc => cc.GamingCategory).ThenInclude(f => f.Category).Include(t => t.GamingTag).ThenInclude(th => th.Tag).Include(gc => gc.GamingColors).ThenInclude(c => c.Color).Include(gs => gs.GamingSizes).ThenInclude(s => s.Size).AsSingleQuery().FirstOrDefault(x => x.Id == id);
+            if (!User.Identity.IsAuthenticated)
+            {
+                return RedirectToAction("Login", "Accound", new { returnUrl = Url.Action("Detail", "Shop", new { id }) });
+            }
 
-            ViewBag.RelatedGamings = _context.Gamings
-        .Include(p => p.GamingImage).Include(t => t.GamingTag).ThenInclude(tg => tg.Tag)
-                                    .OrderByDescending(p => p.Id)
-                                            .ToList();
+            IQueryable<GamingShop> gaming = _context.Gamings.AsNoTracking().AsQueryable();
+            GamingShop? gamings = gaming
+                .Include(ci => ci.GamingImage)
+                .Include(cc => cc.GamingCategory).ThenInclude(f => f.Category)
+                .Include(t => t.GamingTag).ThenInclude(th => th.Tag)
+                .Include(gc => gc.GamingColors).ThenInclude(c => c.Color)
+                .Include(gs => gs.GamingSizes).ThenInclude(s => s.Size)
+                .AsSingleQuery()
+                .FirstOrDefault(x => x.Id == id);
+
+            if (gamings == null)
+            {
+                return RedirectToAction("NotFound");
+            }
+
+            List<GamingShop> relatedProducts = _context.Gamings
+                .Include(p => p.GamingImage)
+                .Include(t => t.GamingTag)
+                .ThenInclude(tg => tg.Tag)
+                .Include(c => c.GamingCategory)
+                .ThenInclude(ct => ct.Category)
+                .Where(c => c.GamingCategory.Any(pc => pc.CategoryId == gamings.GamingCategory.FirstOrDefault().CategoryId))
+                .OrderByDescending(p => p.Id)
+                .ToList();
+
+            ViewBag.RelatedProducts = relatedProducts;
 
             return View(gamings);
         }
@@ -109,6 +136,10 @@ namespace Gaming.Controllers
                 relateds.AddRange(related);
             });
             return relateds;
+        }
+        public IActionResult Cart()
+        {
+            return View();
         }
     }
 }

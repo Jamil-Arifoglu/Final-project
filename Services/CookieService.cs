@@ -13,20 +13,18 @@ namespace Gaming.Services
             _httpContextAccessor = httpContextAccessor;
         }
 
-        public void SetBasketCookie(CookieBasketVM basket)
-        {
-            string serializedBasket = JsonConvert.SerializeObject(basket);
-            _httpContextAccessor.HttpContext.Response.Cookies.Append("Basket", serializedBasket);
-        }
 
-        public CookieBasketVM GetBasketFromCookie()
+
+        public BasketVM GetBasketFromCookie()
         {
             string serializedBasket = _httpContextAccessor.HttpContext.Request.Cookies["Basket"];
             if (serializedBasket != null)
             {
-                return JsonConvert.DeserializeObject<CookieBasketVM>(serializedBasket);
+                return JsonConvert.DeserializeObject<BasketVM>(serializedBasket);
             }
             return null;
         }
+
+
     }
 }

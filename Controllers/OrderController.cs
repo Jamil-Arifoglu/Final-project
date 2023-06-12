@@ -34,18 +34,18 @@ namespace Gaming.Controllers
 
                 User user = await _userManager.GetUserAsync(User);
 
-                CookieBasketVM cookieBasket = _cookieService.GetBasketFromCookie();
+                BasketVM cookieBasket = _cookieService.GetBasketFromCookie();
 
 
                 if (cookieBasket == null)
                 {
-                    cookieBasket = new CookieBasketVM();
+                    cookieBasket = new BasketVM();
                 }
 
-                cookieBasket.Items.Add(product);
+                cookieBasket.CookieBasketItems.Add(product);
 
 
-                _cookieService.SetBasketCookie(cookieBasket);
+
 
 
                 Basket basket = await _context.Baskets
@@ -73,7 +73,7 @@ namespace Gaming.Controllers
                     UnitPrice = (decimal)product.Price,
                     SaleQuantity = product.Quantity,
                     Title = product.Title,
-                    ImageUrl = product.ImageUrl,
+                    ImageUrl = product.Src,
 
 
                 };

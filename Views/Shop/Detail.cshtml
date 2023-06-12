@@ -1,6 +1,9 @@
 ﻿@model GamingShop
 
+@{
 
+    List<GamingShop> related = ViewBag.RelatedProducts;
+}
 
 <section id="Detalik-section">
     <div class="container">
@@ -9,7 +12,7 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-6 title">
-                <div class="product-information">
+                <div class="product-information" data-id="@Model.Id">
                     <div class="category-wishlist">
                         <div class="category">
                             @foreach (var item in Model.GamingCategory)
@@ -28,7 +31,7 @@
                             <i class="fa-regular fa-star"></i>
                         </div>
                         <div class="name">
-                            <h1>@Model.Name</h1>
+                            <h1 class="title">@Model.Name</h1>
                         </div>
                         <div class="sku">
                             <ul class="">
@@ -54,11 +57,12 @@
                     </div>
                     <div class="price-quantity">
                         <div class="price">
-                            <h3>@Model.Price<sup>USD</sup></h3>
+                            <h3 class="price">@Model.Price<sup>USD</sup></h3>
                             <span class="price-item--sale">
                                 <del>@Model.DiscountPrice</del> <sup class="currency-type">USD</sup>
                             </span>
                         </div>
+                      
                         <div class="quantity">
                             <button style="background-color:black; height: 40px; width: 50px;" class="quantity__button no-js-hidden quantity-decrement " name="minus" type="button">
                                 <svg width="12" height="2" viewBox="0 0 12 2" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -73,8 +77,39 @@
                             </button>
                         </div>
                     </div>
+
+                 
+                        <div class="item d-none">
+                            <div style="padding: 20px;" class="product-card-image-type" data-id="1">
+                                <div class="wishlist-button">
+                                    <i class="fa-regular fa-heart"
+                                       style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
+                                </div>
+                                <div style="color: white;" class="carts">
+                                    console
+                                </div>
+                                <h4 style="color: white;" class="title">@Model.Name </h4>
+                                <div style="color: white;" class="product-type">
+                                    TYPE:
+                                    <p>
+                                    </p>
+                                </div>
+                                <a style="text-decoration: none;" href="">
+                                    <div class="product-images">
+                                        <img src="~/assets/images/Products/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                    </div>
+
+                                </a>
+                                <span style="color: white;" class="prices">@Model.Price <sup>usd</sup></span>
+                                <div class="buyy">
+                                    <button type="button" class="buy btn btn-danger">ADD TO CART</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    
                     <div class="add-buy">
-                        <div class="add buyy btn btn-primary" onclick="addToCart()">Add To Cart</div>
+                        <div class=" buy btn btn-primary" onclick="addToCart()">Add To Cart</div>
                         <div class="buy btn btn-primary">Buy it new</div>
                     </div>
                 </div>
@@ -88,7 +123,7 @@
                                 <div class="slider-nav">
                                     <div class="slider-nav">
                                         <div>
-                                            <img src="~/assets/images/BodyImages/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                            <img class="img" src="~/assets/images/Products/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
                                         </div>
                                         @foreach (var item in Model.GamingImage)
                                         {
@@ -103,7 +138,7 @@
                             <div class="main-container">
                                 <div class="slider slider-main">
                                     <div class="ssc">
-                                        <img class="eedd" src="~/assets/images/BodyImages/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                        <img class="eedd" src="~/assets/images/Products/@Model.GamingImage.FirstOrDefault(i=>i.IsMain ==false)?.Path">
                                     </div>
                                     @foreach (var item in Model.GamingImage)
                                     {
@@ -193,119 +228,11 @@
 </section>
 
 
-
-<section id="Slider-product">
-    <div class="container">
-        <div class="row">
-            <div class="section-title">
-                <h2>Best <br> <span>Pro Gaming</span> Products</h2>
-                <span style="color: gray;">
-                    More powerful hardware not only betters their experiences in games they're
-                    currently
-                    playing,<br> but it also gives many players access to titles with more demanding specifications.
-                </span>
-            </div>
-            <div class="owl-carousel products-item">
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
+@await Html.PartialAsync("_GamingPartial",related)
 
 
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-                                <script>
+@*
+<script>
 
 
 
@@ -413,12 +340,12 @@
     }
 
     function GetProductDatas(product) {
-        let parent = product.parentElement.parentElement;
+        let parent = product.parentElement;
         let id = parent.getAttribute("data-id");
         let title = parent.querySelector(".title").innerText;
         let price = parent.querySelector(".prices").innerText;
 
-        let src = parent.querySelector("img").src;
+        let src = parent.querySelector(".img").src;
         let result = { id, title, price, src, count: 1 };
         return result;
     }
@@ -490,4 +417,4 @@
     }
 
 
-                                </script>
+                                </script>*@

@@ -1,5 +1,4 @@
-﻿<!-- body-images -->
-<!-- Start -->
+﻿@model List<GamingShop>
 <section class="body-images">
 
     <div class="information-text">
@@ -20,11 +19,11 @@
         </span>
         <div class="buttons">
             <div class="show-buttom-first">
-                <button class="show-products  btn-primary">Show Products</button>
+                <button asp-controller="Shop" asp-action="Collections" class="show-products  btn-primary">Show Products</button>
 
             </div>
             <div class="show-buttom-seccound">
-                <button class="show-collections  btn-primary">Show Collections</button>
+                <button asp-controller="Shop" asp-action="Collections" class="show-collections  btn-primary">Show Collections</button>
             </div>
         </div>
 
@@ -73,25 +72,16 @@
 
                 <div class="product-img">
 
-                    <div class="product-img__item" id="img1">
-                        <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp"
-                             alt="battle ground" class="product-img__img">
-                    </div>
+                 @foreach (var item in Model)
+                    {
+                        <div class="product-img__item" id="@item.Id" data-target="@item.Id">
+                            <img style="width:330px;" src="~/assets/images/Products/@item.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path"
+                                 alt="battle ground" class="product-img__img">
+                        </div>
 
-                    <div class="product-img__item" id="img2">
-                        <img src="./assets/images/Products/sa-1_4661881d-c8c7-4d3b-962e-038344e4ac81_258x258.webp"
-                             alt="battle ground" class="product-img__img">
-                    </div>
+                    }
 
-                    <div class="product-img__item" id="img3">
-                        <img src="./assets/images/Products/as-hyperx_cloud_alpha_black_1_main_1600x-removebg-preview_258x258.webp"
-                             alt="battle ground" class="product-img__img">
-                    </div>
 
-                    <div class="product-img__item" id="img4" data-target="img4">
-                        <img src="./assets/images/Products/asa-gx6-back-1000-removebg-preview_258x258.webp" alt="battle ground"
-                             class="product-img__img">
-                    </div>
 
 
                 </div>
@@ -113,272 +103,76 @@
                     </button>
 
                     <div class="product-slider__wrp swiper-wrapper">
-                        <div class="product-slider__item swiper-slide" data-target="img4">
-                            <a href="./Detail.html">
-                                <div class="product-slider__card">
+                   @foreach (var item in Model)
+                        {
+                            <div class="product-slider__item swiper-slide" data-target="@item.Id">
+                                <a asp-controller="Shop"  asp-action="detail" asp-route-id="@item.Id">
+                                    <div class="product-slider__card">
 
-                                    <div class="product-slider__content">
-                                        <h1 class="product-slider__title">
-                                            Electrobot Xtreme Gaming Series PC
-                                        </h1>
-                                        <span class="product-slider__price">$1.299,<sup>99</sup></span>
-                                        <div class="product-ctr">
-                                            <div class="product-labels">
-                                                <div class="product-labels__title">MEMORY SIZE</div>
+                                        <div class="product-slider__content">
+                                            <h1 class="product-slider__title">
+                                               @item.Name
+                                            </h1>
+                                            <span class="product-slider__price">@item.Price<sup>99</sup></span>
+                                            <div class="product-ctr">
+                                                <div class="product-labels">
+                                                    <div class="product-labels__title"></div>
 
-                                                <div class="product-labels__group">
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type5">
-                                                        <span class="product-labels__txt">128Gb</span>
-                                                    </label>
+                                                    <div class="product-labels__group">
+                                                      @foreach (var size in item.GamingSizes)
+                                                        {
+                                                            <label class="product-labels__item">
+                                                                <input type="radio" class="product-labels__checkbox" name="type5">
+                                                                <span class="product-labels__txt">@size.Size.Name</span>
+                                                            </label>
+                                                        }
 
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type5" checked>
-                                                        <span class="product-labels__txt">256Gb</span>
-                                                    </label>
+                                                        @foreach (var size in item.GamingColors)
+                                                        {
+                                                            <label class="product-labels__item">
+                                                                <input type="radio" class="product-labels__checkbox" name="type5">
+                                                                <span class="product-labels__txt">@size.Color.Name</span>
+                                                            </label>
+                                                        }
 
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type5">
-                                                        <span class="product-labels__txt">500Gb</span>
-                                                    </label>
+                                                    </div>
 
+                                                </div>
 
+                                                <span class="hr-vertical"></span>
+
+                                                <div class="product-inf">
+                                                    <div class="product-inf__percent">
+                                                        <div class="product-inf__percent-circle">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                                                                <defs>
+                                                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                                        <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
+                                                                        <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
+                                                                    </linearGradient>
+                                                                </defs>
+                                                                <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
+                                                                        stroke-width="4" fill="none" />
+                                                            </svg>
+                                                        </div>
+                                                        <div class="product-inf__percent-txt">
+                                                            @item.Discount<span>%</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <span class="product-inf__title">DURABILITY RATE</span>
                                                 </div>
 
                                             </div>
 
-                                            <span class="hr-vertical"></span>
-
-                                            <div class="product-inf">
-                                                <div class="product-inf__percent">
-                                                    <div class="product-inf__percent-circle">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                                            <defs>
-                                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                                                    stroke-width="4" fill="none" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="product-inf__percent-txt">
-                                                        80%
-                                                    </div>
-                                                </div>
-
-                                                <span class="product-inf__title">DURABILITY RATE</span>
-                                            </div>
 
                                         </div>
-
-
                                     </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-slider__item swiper-slide" data-target="img1">
-                            <a href="./Detail.html">
-                                <div class="product-slider__card">
-
-                                    <div class="product-slider__content">
-                                        <h1 class="product-slider__title">
-                                            Colossus Ergonomic Gaming Office Chair
-                                        </h1>
-                                        <span class="product-slider__price">9.999</span>
-                                        <div class="product-ctr">
-                                            <div class="product-labels">
-                                                <div class="product-labels__title">PLAYER'S CHAIR</div>
-
-                                                <div class="product-labels__group">
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type1" checked>
-                                                        <span class="product-labels__txt">Player</span>
-                                                    </label>
-
-
-                                                </div>
-
-                                            </div>
-
-                                            <span class="hr-vertical"></span>
-
-                                            <div class="product-inf">
-                                                <div class="product-inf__percent">
-                                                    <div class="product-inf__percent-circle">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                                            <defs>
-                                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <circle cx="50" cy="50" r="47" stroke-dasharray="225, 300" stroke="#ee9f00"
-                                                                    stroke-width="4" fill="none" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="product-inf__percent-txt">
-                                                        75%
-                                                    </div>
-                                                </div>
-
-                                                <span class="product-inf__title">DURABILITY</span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-slider__item swiper-slide" data-target="img2">
-                            <a href="./Detail.html">
-                                <div class="product-slider__card">
-
-                                    <div class="product-slider__content">
-                                        <h1 class="product-slider__title">
-                                            Alien ware Monitor T 46
-                                        </h1>
-                                        <span class="product-slider__price">$1.699,<sup>99</sup></span>
-                                        <div class="product-ctr">
-                                            <div class="product-labels">
-                                                <div class="product-labels__title">WRITTING</div>
-
-
-
-                                                <div class="product-labels__title">LASER SIZE</div>
-
-                                                <div class="product-labels__group">
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type2">
-                                                        <span class="product-labels__txt">S</span>
-                                                    </label>
-
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type2" checked>
-                                                        <span class="product-labels__txt">M</span>
-                                                    </label>
-
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type2">
-                                                        <span class="product-labels__txt">L</span>
-                                                    </label>
-
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type2">
-                                                        <span class="product-labels__txt">XL</span>
-                                                    </label>
-
-                                                </div>
-
-                                            </div>
-
-                                            <span class="hr-vertical"></span>
-
-                                            <div class="product-inf">
-                                                <div class="product-inf__percent">
-                                                    <div class="product-inf__percent-circle">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                                            <defs>
-                                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                                    <stop offset="0%" stop-color="#ee9f00" stop-opacity="0" />
-                                                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                                                    stroke-width="4" fill="none" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="product-inf__percent-txt">
-                                                        80%
-                                                    </div>
-                                                </div>
-
-                                                <span class="product-inf__title">DURABILITY</span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="product-slider__item swiper-slide" data-target="img3">
-                            <a href="./Detail.html">
-                                <div class="product-slider__card">
-
-                                    <div class="product-slider__content" data-id="2">
-                                        <h1 class="product-slider__title">
-                                            ASSAULT RIFLE <br>
-                                            FN SCAR
-                                        </h1>
-                                        <span class="product-slider__price price">$9.999</span>
-                                        <div class="product-ctr">
-                                            <div class="product-labels">
-                                                <div class="product-labels__title">RIFLE VERSON</div>
-
-                                                <div class="product-labels__group">
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type6" checked>
-                                                        <span class="product-labels__txt">16S</span>
-                                                    </label>
-
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type6">
-                                                        <span class="product-labels__txt">17S</span>
-                                                    </label>
-                                                </div>
-
-                                                <div class="product-labels__title">SHOOT TYPE</div>
-
-                                                <div class="product-labels__group">
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type7" checked>
-                                                        <span class="product-labels__txt">Semi-automatic</span>
-                                                    </label>
-
-                                                    <label class="product-labels__item">
-                                                        <input type="radio" class="product-labels__checkbox" name="type7">
-                                                        <span class="product-labels__txt">automatic</span>
-                                                    </label>
-                                                </div>
-
-                                            </div>
-
-                                            <span class="hr-vertical"></span>
-
-                                            <div class="product-inf">
-                                                <div class="product-inf__percent">
-                                                    <div class="product-inf__percent-circle">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                                                            <defs>
-                                                                <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
-                                                                    <stop offset="0%" stop-color="#0c1e2c" stop-opacity="0" />
-                                                                    <stop offset="100%" stop-color="#ee9f00" stop-opacity="1" />
-                                                                </linearGradient>
-                                                            </defs>
-                                                            <circle cx="50" cy="50" r="47" stroke-dasharray="240, 300" stroke="#ee9f00"
-                                                                    stroke-width="4" fill="none" />
-                                                        </svg>
-                                                    </div>
-                                                    <div class="product-inf__percent-txt">
-                                                        80%
-                                                    </div>
-                                                </div>
-
-                                                <span class="product-inf__title">DURABILITY RATE</span>
-                                            </div>
-
-                                        </div>
-
-
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
+                                </a>
+                            </div>
+                        }
+                            
+                       
                     </div>
                 </div>
 
@@ -409,123 +203,45 @@
                     <button class="power btn-primary">Power Supplies</button>
                 </div>
                 <div class="more-categories">
-                    <a href="">SHOW MORE CATEGORIES</a>
+                    <a asp-controller="Shop" asp-action="Collection">SHOW MORE CATEGORIES</a>
                 </div>
             </div>
             <div class="product-carusel col-lg-9 col-12 col-12">
                 <div class="owl-carousel products-item">
-                    <div class="item">
-                        <div style="padding: 20px;" class="product-card-image-type" data-id="1">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
-                            </div>
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;" class="title">Nintendo </h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <a style="text-decoration: none;" href="">
-                                <div class="product-images">
-                                    <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
+                  @foreach (var item in Model)
+                    {
+                            <div class="item">
+                      
+                                <div style="padding: 20px;" class="product-card-image-type" data-id="@item.Id">
+                                    <div class="wishlist-button">
+                                        <i class="fa-regular fa-heart"
+                                           style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
+                                    </div>
+                                    <div style="color: white;" class="carts">
+                                        console
+                                    </div>
+                                    <h4 style="color: white;" class="title">@item.Name </h4>
+                                    <div style="color: white;" class="product-type">
+                                        TYPE:
+                                        <p>
+                                        </p>
+                                    </div>
+                                    <a asp-controller="Shop" asp-action="detail" asp-route-id="@item.Id">
+                                        <div class="product-images">
+                                            <img  src="~/assets/images/Products/@item.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                        </div>
+
+                                    </a>
+                                    <span style="color: white;" class="prices">@item.Price<sup>usd</sup></span>
+                                    <div class="buyy">
+                                        <button type="button" class="buy btn btn-danger">ADD TO CART</button>
+                                    </div>
                                 </div>
+                    
 
-                            </a>
-                            <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                            <div class="buyy">
-                                <button type="button" class="buy btn btn-danger">ADD TO CART</button>
                             </div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div style="padding: 20px;" class="product-card-image-type" data-id="2">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px;"></i>
-                            </div>
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <a style="text-decoration: none;" href="">
-                                <div class="product-images">
-                                    <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                                </div>
-
-                            </a>
-                            <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                            <div class="buyy">
-                                <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div style="padding: 20px;" class="product-card-image-type" data-id="3">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px;"></i>
-                            </div>
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <a style="text-decoration: none;" href="">
-                                <div class="product-images">
-                                    <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                                </div>
-
-                            </a>
-                            <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                            <div class="buyy">
-                                <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="item">
-                        <div style="padding: 20px;" class="product-card-image-type" data-id="4">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px;"></i>
-                            </div>
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;" class="title">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <a style="text-decoration: none;" href="">
-                                <div class="product-images">
-                                    <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                                </div>
-
-                            </a>
-                            <span style="color: white;" class="prices">458,56 <sup>usd</sup></span>
-                            <div class="buyy">
-                                <button type="button" class="buy btn btn-danger">ADD TO CART</button>
-                            </div>
-                        </div>
-
-                    </div>
+                    }
+                
                 </div>
             </div>
             <div class="images col-12">
@@ -573,7 +289,7 @@
                                     </p>
                                 </div>
 
-                                <span style="color: white;">458,56 <sup>usd</sup></span>
+                                <span style="color: white;"><sup>usd</sup></span>
 
                             </div>
 
@@ -633,7 +349,7 @@
 </section>
 <section id="Shopify-section">
     <img src="//gaming-workdo.myshopify.com/cdn/shop/files/about-us.png?v=1670902356"
-         class="about-img-1" alt="image">
+         class="about-img-1" alt="image"> 
     <div class="container">
         <div class="section-title">
             <h2>About our shop</h2>
@@ -690,92 +406,11 @@
                 </span>
             </div>
             <div class="owl-carousel products-item">
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
-                            </div>
+                @foreach (var item in Model)
+                {
+                    <div class="item">
 
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
-                            </div>
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-                            <div class="wishlist-button">
-                                <i class="fa-regular fa-heart"
-                                   style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
-                            </div>
-
-                            <div style="color: white;" class="carts">
-                                console
-                            </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
-                            <div style="color: white;" class="product-type">
-                                TYPE:
-                                <p>
-                                </p>
-                            </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
-
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
-                        </div>
-                    </a>
-
-                </div>
-                <div class="item">
-                    <a style="text-decoration: none;" href="">
-                        <div style="padding: 20px;" class="product-card-image-type">
-
+                        <div style="padding: 20px;" class="product-card-image-type" data-id="@item.Id">
                             <div class="wishlist-button">
                                 <i class="fa-regular fa-heart"
                                    style="color: brown; font-size:25px; font-size:20px; font-size: 25px;"></i>
@@ -783,22 +418,27 @@
                             <div style="color: white;" class="carts">
                                 console
                             </div>
-                            <h4 style="color: white;">Nintendo Switch Lite - Turquoise</h4>
+                            <h4 style="color: white;" class="title">@item.Name </h4>
                             <div style="color: white;" class="product-type">
                                 TYPE:
                                 <p>
                                 </p>
                             </div>
-                            <div class="product-images">
-                                <img src="./assets/images/Products/1_50862e3f-4e56-4d7c-9220-04cde28aca6d_258x258-ss.webp" alt="">
-                            </div>
+                            <a asp-controller="Shop" asp-action="detail" asp-route-id="@item.Id">
+                                <div class="product-images">
+                                    <img src="~/assets/images/Products/@item.GamingImage.FirstOrDefault(i=>i.IsMain ==true)?.Path">
+                                </div>
 
-                            <span style="color: white;">458,56 <sup>usd</sup></span>
-
+                            </a>
+                            <span style="color: white;" class="prices">@item.Price<sup>usd</sup></span>
+                           
                         </div>
-                    </a>
 
-                </div>
+
+                    </div>
+                }
+
+
             </div>
         </div>
     </div>

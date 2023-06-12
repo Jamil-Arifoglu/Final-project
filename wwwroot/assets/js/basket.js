@@ -1,4 +1,4 @@
-function setCookie(name, value, days) {
+ï»¿function setCookie(name, value, days) {
     let expires = "";
     if (days) {
         let date = new Date();
@@ -29,12 +29,12 @@ function sendBasketToServer(product) {
     })
         .then((response) => response.json())
         .then((data) => {
-            // İstek başarılı olduğunda yapılacak işlemler
-            console.log("İstek başarılı", data);
+            // Ãstek baÃ¾arÃ½lÃ½ olduÃ°unda yapÃ½lacak iÃ¾lemler
+            console.log("Ãstek baÃ¾arÃ½lÃ½", data);
         })
         .catch((error) => {
-            // Hata durumunda yapılacak işlemler
-            console.error("İstek hatası", error);
+            // Hata durumunda yapÃ½lacak iÃ¾lemler
+            console.error("Ãstek hatasÃ½", error);
         });
 }
 
